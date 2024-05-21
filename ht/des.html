@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOODS</title>
+    <link rel="stylesheet" href="css/des.css">
+    <style>
+       
+
+        html {
+            box-sizing: border-box;
+            font-size: 62.5%;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-size: 1.6rem;
+            /* font-size 1.6rem is now the same as 16px */
+            line-height: 1.6;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            padding: 50px;
+            background-color: rgb(138, 131, 176);
+            text-align: center;
+        }
+
+        main {
+            background-image: url('assets/swirly green bg.jpg');
+            max-width: 800px;
+            margin: 50px auto;
+            margin-bottom: 50px;
+        }
+
+        .image-div {
+            display: inline-block;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="page-title">BLANC</h1>
+    </header>
+    <main>
+        <p class="text-block">Have you ever pondered what might be going on inside your head or the nature of your thoughts? The mind is a journey of ceaseless activity, constantly filled with ideas, memories and emotions. Every moment in your mind is constantly in conflict with each other vying for attention.</p>
+        <p class="text-block">BLANC. Imagine an empty plane, never ending in all directions. Every section of your mind places a bubble with intricate details and colors depicting your innermost desires, fears, and aspirations.</p>
+        <p class="text-block">Here, exists a space where that represents my mind when it’s momentarily stilled. A quiet corner of my mind. BLANC, an absence of thought. A reminder of the boundless thoughts each one of us has.</p>
+
+        <div class="images-container">
+            <div class="image-div" id="image-0">
+                <img src="images/1.jpg" alt=":]" height="300px">
+            </div>
+
+            <div class="image-div hidden" id="image-1">
+                <img src="images/2.jpg" alt="D:" height="300px">
+            </div>
+
+            <div class="image-div hidden" id="image-2">
+                <img src="images/3.jpg" alt="test image" height="300px">
+            </div>
+
+            <div class="image-div hidden" id="image-3">
+                <img src="images/4.jpg" alt="test image" height="300px">
+            </div>
+        </div>
+    </main>
+
+    <script src="js/des.js"></script>
+</body>
+
+</html>

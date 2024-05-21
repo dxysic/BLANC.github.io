@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLANC</title>
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- use an import map to link to the Three.js CDN -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <!-- Link to your Javascript file as a type="module", this will execute the file after the HTML is loaded -->
+    <script type="module" src="js/main.js"></script>
+    
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            position: relative; /* Ensure body is relatively positioned */
+        }
+        #button-container {
+            position: absolute;
+            top: 10px; /* Adjust as needed */
+            left: 10px; /* Adjust as needed */
+            z-index: 1000; /* Ensures the buttons are above other elements */
+        }
+        .purple-button {
+            background-color: purple;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Ensures proper button display */
+            margin-bottom: 10px; /* Adds space between buttons */
+        }
+        .purple-button:hover {
+            background-color: darkorchid;
+        }
+    </style>
+</head>
+<body>
+    <div id="button-container">
+        <a href="ht/comment.html" class="purple-button">DREAM HERE</a>
+        <a href="ht/des.html" class="purple-button">ONE MIND</a>
+        <input type="range" id="volume-slider" min="0" max="5" value="" />
+    </div>
+    
+    <canvas id="bg"></canvas>
+    
+    <!-- Add audio element -->
+    <audio id="audio" src="audio/mornings.mp3" loop></audio>
+</body>
+</html>

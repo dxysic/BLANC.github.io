@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR THOUGHTS</title>
+    
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            position: relative; /* Ensure body is relatively positioned */
+        }
+
+        #commentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Use the full viewport height */
+}
+
+/* Adjust the styles for other elements as needed */
+
+        #button-container {
+            position: absolute;
+            top: 10px; /* Adjust as needed */
+            left: 10px; /* Adjust as needed */
+            z-index: 1000; /* Ensures the buttons are above other elements */
+        }
+        .purple-button {
+            background-color: purple;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Ensures proper button display */
+            margin-bottom: 10px; /* Adds space between buttons */
+        }
+        .purple-button:hover {
+            background-color: darkorchid;
+        }
+    </style>
+</head>
+<body>
+    <div id="commentSection">
+        <h2>How do you think your conscious looks like?</h2>
+        <p>Leave a comment anonymously:</p>
+        <form id="commentForm">
+            <textarea id="comment" placeholder="Type your comment..." rows="4" cols="50"></textarea>
+            <br><br>
+            <button type="submit">Submit Comment</button>
+        </form>
+        <div id="comments">
+            <!-- Comments will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
